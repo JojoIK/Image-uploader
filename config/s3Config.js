@@ -1,6 +1,7 @@
+require("dotenv").config();
 const { S3Client, HeadBucketCommand } = require("@aws-sdk/client-s3");
 const { envConfig } = require("./envConfig");
-const logger = require('../utils/logger')
+const logger = require('../utils/logger');
 
 
 // Initialize S3 Client
@@ -13,7 +14,7 @@ const s3Client = new S3Client({
     }
 })
 
-// S3 Configuration object
+// S3 shared config and helpers
 const s3Config = {
     client: s3Client,
     bucketName: envConfig.s3.bucketName,
@@ -61,11 +62,9 @@ const s3Config = {
 }
 
 // Test S3 connection
-const testS3Connection = async () => {
+async function testS3Connection() {
     try {
-        await s3Client.send(new HeadBucketCommand({
-            Bucket: s3Config.bucketName
-        }))
+        await s3Client.send(new HeadBucketCommand({ Bucket: s3Config.bucketName }))
         logger.info(`S3 connection established successfully to bucket: ${s3Config.bucketName}`)
         return true
     } catch (error) {
@@ -79,58 +78,34 @@ const testS3Connection = async () => {
     }
 }
 
-// Generate S3 object key
-const generateS3Key = (folder, filename, userId = null) => {
-    const timestamp = Date.now()
-    const userPrefix = userId ? `user-${userId}/` : ''
-    return `${folder}/${userPrefix}${timestamp}-${filename}`
-}
-
-// Get public URL for S3 object
-const getPublicUrl = (key) => {
-    return `https://${s3Config.bucketName}.s3.${s3Config.region}.amazonaws.com/${key}`
-}
-
 // Enhanced S3 configuration with helper methods
-const enhancedS3Config = {
+const enhancedS3 = {
     ...s3Config,
 
     // Helper methods
     helpers: {
-        generateKey: generateS3Key,
-        getPublicUrl,
-        testConnection: testS3Connection,
-
-        // Get content type from file extension
+        testS3Connection,
+        generateKey: (folder, filename, userId = null) => {
+            const timestamp = Date.now()
+            const userPrefix = userId ? `user-${userId}/` : ''
+            return `${folder}/${userPrefix}${timestamp}-${filename}`
+        }, // Generate S3 object key
+        getPublicUrl: key => `https://${s3Config.bucketName}.s3.${s3Config.region}.amazonaws.com/${key}`, // Get public URL for S3 object
         getContentType: (filename) => {
             const ext = filename.split('.').pop().toLowerCase()
             return s3Config.contentTypes[ext] || 'application/octet-stream'
-        },
-
-        // Validate file type
-        isValidFileType: (contentType) => {
-            return Object.values(s3Config.contentTypes).includes(contentType)
-        },
-
-        // Generate upload parameters
-        getUploadParams: (key, buffer, contentType, metadata = {}) => ({
+        }, // Get content type from file extension
+        isValidFileType: type => Object.values(s3Config.contentTypes).includes(type), // Validate file type
+        getUploadParams: (Key, Body, ContentType, Metadata = {}) => ({
             Bucket: s3Config.bucketName,
-            Key: key,
-            Body: buffer,
-            ContentType: contentType,
+            Key, Body, ContentType,
             ...s3Config.objectSettings,
-            Metadata: {
-                uploadedAt: new Date().toISOString(),
-                ...metadata
-            }
-        })
+            Metadata: { uploadedAt: new Date().toISOString(), ...Metadata }
+        }) // Generate upload parameters
     }
 }
 
-// Test connection on initialization
-if (process.env.NODE_ENV !== 'test') {
-    testS3Connection()
-}
+// Auto-test S3 at startup (except in tests)
+if (envConfig.NODE_ENV !== 'test') testS3Connection()
 
-
-module.exports = { s3Config: enhancedS3Config }
+module.exports = { s3Config: enhancedS3 }

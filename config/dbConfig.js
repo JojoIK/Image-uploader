@@ -1,7 +1,7 @@
+require('dotenv').config();
 const { PrismaClient } = require('@prisma/client');
 const logger = require('../utils/logger');
-require('dotenv').config();
-
+const { envConfig } = require("./envConfig");
 
 // Initialize Prisma Client with logging
 const prisma = new PrismaClient({
@@ -27,7 +27,7 @@ const prisma = new PrismaClient({
 
 // Set up Prisma event listeners
 prisma.$on('query', (e) => {
-    if (process.env.NODE_ENV === 'development') {
+    if (envConfig.NODE_ENV === 'development') {
         logger.debug(`Query: ${e.query}`)
         logger.debug(`Params: ${e.params}`)
         logger.debug(`Duration: ${e.duration}ms`)
