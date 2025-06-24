@@ -9,24 +9,33 @@ const envSchema = z.object({
 
     //Database
     DATABASE_URL: z.string().min(1, 'Database URL is required'),
+    DB_LOG_QUERY: z.coerce.boolean().default(true),
+    DB_LOG_INFO: z.coerce.boolean().default(true),
 
-    //AWS S3 CONFIGURATION
+    //AWS S3 
     AWS_REGION: z.string().min(1, 'AWS region is required'),
     AWS_ACCESS_KEY_ID: z.string().min(1, 'AWS access key is required'),
     AWS_SECRET_ACCESS_KEY: z.string().min(1, 'AWS secret key is required'),
     S3_BUCKET_NAME: z.string().min(1, 'S3 bucket name is required'),
     S3_BUCKET_REGION: z.string().optional(),
 
-    //JWT Configuration
+    //JWT 
     JWT_SECRET: z.string().min(32, 'JWT secret must be at least 32 characters'),
     JWT_EXPIRES_IN: z.string().default('7d'),
 
+    //Swagger
+    ENABLE_SWAGGER_IN_PROD: z.coerce.boolean().default(false),
+    
     //Upload Configuration
-    MAX_FILE_SIZE: z.coerce.number(v => {
-        // Allow both byte string (e.g. '10485760') or '10MB' style
-        const mbMatch = v.match(/^(\d+)(mb)?$/i);
-        return mbMatch ? parseInt(mbMatch[1]) * (mbMatch[2] ? 1024 * 1024 : 1) : parseInt(v);
-    }).default('10485760'), // 10MB default,
+    MAX_FILE_SIZE: z.preprocess(
+        (val) => {
+            if (typeof val === 'number') return val
+            const str = string(val)
+            const match = str.match(/^(\d+)(mb)?$/i)
+            return match ? parseInt(match[1]) * (match[2] ? 1024 * 1024 : 1) : parseInt(str)
+        },
+        z.number().default('10485760') // 10MB default
+    ),
     MAX_FILES: z.coerce.number().default('5'),
     ALLOWED_FILE_TYPES: z.string().default('image/jpeg,image/png,image/webp,image/gif'),
     ALLOWED_EXTENSIONS: z.string().default('jpg,jpeg,png,gif,webp'),
@@ -46,26 +55,30 @@ const envSchema = z.object({
     LOG_LEVEL: z.enum(['error', 'warn', 'info', 'debug']).default('info')
 })
 
-//Validate environment variables
-let envConfig
+//Validate and parse environment variables
+let parsedEnv
 try {
-    envConfig = envSchema.parse(process.env)
+    parsedEnv = envSchema.parse(process.env)
 } catch (error) {
     logger.error('Invalid environment configuration')
-    logger.error(error.errors.map(err => ` ${err.path.join('.')}: ${err.message}`).join('\n'))
+    error.errors.forEach(err => {
+        logger.error(` ${err.path.join('.')}: ${err.message}`)
+    })
     process.exit(1)
 }
 
 //Derived configurations
-const config = {
-    ...envConfig,
+const config = Object.freeze({
+    ...parsedEnv,
 
     // Parse file types/extensions
-    allowedFileTypes: envConfig.ALLOWED_FILE_TYPES.split(','),
-    allowedExtensions: envConfig.ALLOWED_EXTENSIONS.split(','),
+    allowedFileTypes: parsedEnv.ALLOWED_FILE_TYPES.split(','),
+    allowedExtensions: parsedEnv.ALLOWED_EXTENSIONS.split(','),
 
     // Parse allowed origins
-    allowedOrigins: envConfig.ALLOWED_ORIGINS ? envConfig.ALLOWED_ORIGINS.split(',') : null,
+    allowedOrigins: parsedEnv.ALLOWED_ORIGINS
+        ? parsedEnv.ALLOWED_ORIGINS.split(',').map(origin => origin.trim())
+        : [],
 
     // Image processing settings
     imageProcessing: {
@@ -76,14 +89,14 @@ const config = {
 
     // S3 configuration
     s3: {
-        region: envConfig.AWS_REGION,
+        region: parsedEnv.AWS_REGION,
         credentials: {
-            accessKeyId: envConfig.AWS_ACCESS_KEY_ID,
-            secretAccessKey: envConfig.AWS_SECRET_ACCESS_KEY
+            accessKeyId: parsedEnv.AWS_ACCESS_KEY_ID,
+            secretAccessKey: parsedEnv.AWS_SECRET_ACCESS_KEY
         },
-        bucketName: envConfig.S3_BUCKET_NAME,
-        bucketRegion: envConfig.S3_BUCKET_REGION || envConfig.AWS_REGION
+        bucketName: parsedEnv.S3_BUCKET_NAME,
+        bucketRegion: parsedEnv.S3_BUCKET_REGION || parsedEnv.AWS_REGION
     }
-}
+})
 
 module.exports = { envConfig: config }

@@ -1,4 +1,8 @@
-const httpConfig = () => ({
+/**
+ * HTTP Status Codes
+ * Categorized for readability and immutability.
+ */
+const HTTP_STATUS = Object.freeze({
     // Success responses
     OK: 200,
     CREATED: 201,
@@ -23,6 +27,5 @@ const httpConfig = () => ({
     GATEWAY_TIMEOUT: 504,
 })
 
-const HTTP_STATUS = httpConfig()
 
 module.exports = { HTTP_STATUS }

@@ -3,22 +3,24 @@ const { S3Client, HeadBucketCommand } = require("@aws-sdk/client-s3");
 const { envConfig } = require("./envConfig");
 const logger = require('../utils/logger');
 
+//Destructive Config
+const { region, credentials, bucketName } = envConfig.s3
 
 // Initialize S3 Client
 const s3Client = new S3Client({
-    region: envConfig.s3.region,
-    credentials: envConfig.s3.credentials,
+    region,
+    credentials,
     requestHandler: {
         requestTimeout: 30000, //30 seconds
         httpsAgent: { maxSockets: 25 }
     }
 })
 
-// S3 shared config and helpers
-const s3Config = {
+// Base S3 configuration
+const s3Config = Object.freeze({
     client: s3Client,
-    bucketName: envConfig.s3.bucketName,
-    region: envConfig.s3.region,
+    bucketName,
+    region,
 
     // S3 folder structure
     folders: {
@@ -59,53 +61,64 @@ const s3Config = {
         partSize: 5 * 1024 * 1024, // 5MB
         queueSize: 4
     }
-}
+})
 
-// Test S3 connection
+// Helper: Test S3 bucket access
 async function testS3Connection() {
     try {
-        await s3Client.send(new HeadBucketCommand({ Bucket: s3Config.bucketName }))
-        logger.info(`S3 connection established successfully to bucket: ${s3Config.bucketName}`)
+        await s3Client.send(new HeadBucketCommand({ Bucket: bucketName }))
+        logger.info(`S3 connection established successfully to bucket: ${bucketName}`)
         return true
     } catch (error) {
         logger.error(`S3 connection failed: ${error.message}`)
         if (error.name === 'NotFound') {
-            logger.error(`Bucket ${s3Config.bucketName} does not exist`)
+            logger.error(`Bucket ${bucketName} does not exist`)
         } else if (error.name === 'Forbidden') {
-            logger.error(`Access denied to bucket ${s3Config.bucketName}`)
+            logger.error(`Access denied to bucket ${bucketName}`)
         }
         return false
     }
 }
 
 // Enhanced S3 configuration with helper methods
-const enhancedS3 = {
+const enhancedS3 = Object.freeze({
     ...s3Config,
 
     // Helper methods
     helpers: {
         testS3Connection,
+
         generateKey: (folder, filename, userId = null) => {
             const timestamp = Date.now()
             const userPrefix = userId ? `user-${userId}/` : ''
             return `${folder}/${userPrefix}${timestamp}-${filename}`
         }, // Generate S3 object key
-        getPublicUrl: key => `https://${s3Config.bucketName}.s3.${s3Config.region}.amazonaws.com/${key}`, // Get public URL for S3 object
-        getContentType: (filename) => {
-            const ext = filename.split('.').pop().toLowerCase()
+
+        getPublicUrl: key => `https://${bucketName}.s3.${region}.amazonaws.com/${key}`, // Get public URL for S3 object
+
+        getContentType: filename => {
+            if (!filename || typeof filename !== 'string') return 'application/octet-stream'
+            const ext = filename.split('.').pop()?.toLowerCase()
             return s3Config.contentTypes[ext] || 'application/octet-stream'
         }, // Get content type from file extension
-        isValidFileType: type => Object.values(s3Config.contentTypes).includes(type), // Validate file type
+
+        isValidFileType: type =>
+            Object.values(s3Config.contentTypes).includes(type), // Validate file type
+
         getUploadParams: (Key, Body, ContentType, Metadata = {}) => ({
-            Bucket: s3Config.bucketName,
+            Bucket: bucketName,
             Key, Body, ContentType,
             ...s3Config.objectSettings,
             Metadata: { uploadedAt: new Date().toISOString(), ...Metadata }
         }) // Generate upload parameters
     }
-}
+})
 
 // Auto-test S3 at startup (except in tests)
-if (envConfig.NODE_ENV !== 'test') testS3Connection()
+if (envConfig.NODE_ENV !== 'test') {
+    testS3Connection().catch(err => {
+        logger.warn('S3 connection test failed at startup. Continuing...')
+    })
+}
 
 module.exports = { s3Config: enhancedS3 }

@@ -10,128 +10,129 @@ datasource db {
 }
 
 model User {
-  id        String   @id @default(uuid())
-  email     String   @unique
-  username  String?  @unique
+  id        String  @id @default(uuid())
+  email     String  @unique
+  username  String? @unique
   password  String
   firstName String?
   lastName  String?
   avatar    String?
-  role      Role     @default(USER)
-  isActive  Boolean  @default(true)
-  
+  role      Role    @default(USER)
+  isActive  Boolean @default(true)
+
   // Relations
-  images    Image[]
-  
+  images Image[]
+
   // Timestamps
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
+  UploadSession UploadSession[]
+
   @@map("users")
 }
 
 model Image {
-  id           String  @id @default(uuid())
+  id           String @id @default(uuid())
   filename     String
   originalName String
   mimeType     String
   size         Int
   width        Int?
   height       Int?
-  
+
   // Storage information
-  s3Key        String  @unique
-  s3Url        String
-  s3Bucket     String
-  
+  s3Key    String @unique
+  s3Url    String
+  s3Bucket String
+
   // Metadata
-  description  String?
-  altText      String?
-  tags         String[] // Array of tags
-  
+  description String?
+  altText     String?
+  tags        String[] // Array of tags
+
   // Processing status
   processingStatus ProcessingStatus @default(PENDING)
-  
-  // Relations
-  userId       String?
-  user         User?   @relation(fields: [userId], references: [id], onDelete: SetNull)
-  
-  processedImages ProcessedImage[]
-  
-  // Timestamps
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
-  
-  @@map("images")
-  @@index([userId])
-  @@index([createdAt])
-  @@index([processingStatus])
-}
 
-model ProcessedImage {
-  id        String @id @default(uuid())
-  
-  // Reference to original image
-  originalImageId String
-  originalImage   Image  @relation(fields: [originalImageId], references: [id], onDelete: Cascade)
-  
-  // Processing details
-  type      ProcessingType
-  width     Int?
-  height    Int?
-  format    ImageFormat
-  quality   Int?
-  size      Int
-  
-  // Storage information
-  s3Key     String @unique
-  s3Url     String
-  s3Bucket  String
-  
-  // Processing parameters (stored as JSON)
-  parameters Json?
-  
-  // Status
-  status    ProcessingStatus @default(COMPLETED)
-  
+  // Relations
+  userId String?
+  user   User?   @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  processedImages ProcessedImage[]
+
   // Timestamps
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  
-  @@map("processed_images")
+
+  @@index([userId])
+  @@index([createdAt])
+  @@index([processingStatus])
+  @@map("images")
+}
+
+model ProcessedImage {
+  id String @id @default(uuid())
+
+  // Reference to original image
+  originalImageId String
+  originalImage   Image  @relation(fields: [originalImageId], references: [id], onDelete: Cascade)
+
+  // Processing details
+  type    ProcessingType
+  width   Int?
+  height  Int?
+  format  ImageFormat
+  quality Int?
+  size    Int
+
+  // Storage information
+  s3Key    String @unique
+  s3Url    String
+  s3Bucket String
+
+  // Processing parameters (stored as JSON)
+  parameters Json?
+
+  // Status
+  status ProcessingStatus @default(COMPLETED)
+
+  // Timestamps
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
   @@index([originalImageId])
   @@index([type])
   @@index([status])
+  @@map("processed_images")
 }
 
 model UploadSession {
-  id           String  @id @default(uuid())
-  sessionToken String  @unique
-  
+  id           String @id @default(uuid())
+  sessionToken String @unique
+
   // Upload details
-  totalFiles   Int
-  uploadedFiles Int    @default(0)
-  failedFiles  Int    @default(0)
-  
+  totalFiles    Int
+  uploadedFiles Int @default(0)
+  failedFiles   Int @default(0)
+
   // Status
-  status       UploadSessionStatus @default(IN_PROGRESS)
-  
+  status UploadSessionStatus @default(IN_PROGRESS)
+
   // User association
-  userId       String?
-  user         User?   @relation(fields: [userId], references: [id], onDelete: SetNull)
-  
+  userId String?
+  user   User?   @relation(fields: [userId], references: [id], onDelete: SetNull)
+
   // Metadata
-  metadata     Json?
-  
+  metadata Json?
+
   // Timestamps
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
-  expiresAt    DateTime
-  
-  @@map("upload_sessions")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  expiresAt DateTime
+
   @@index([sessionToken])
   @@index([userId])
   @@index([status])
+  @@map("upload_sessions")
 }
 
 // Enums

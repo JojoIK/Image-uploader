@@ -9,7 +9,7 @@ const logger = winston.createLogger({
         winston.format.splat(),
         winston.format.json()
     ),
-    defaultMeta: { service: 'Image Uploader' },
+    defaultMeta: { service: 'ImageUploadService' },
     transports: [
         new winston.transports.Console({
             format: winston.format.combine(
@@ -17,16 +17,12 @@ const logger = winston.createLogger({
                 winston.format.simple()
             )
         }),
-        new winston.transports.File({ filename: 'error.log', level: 'error', handleExceptions: true }),
-        new winston.transports.File({ filename: 'combined.log' }),
+        new winston.transports.File({ filename: 'logs/error.log', level: 'error', handleExceptions: true }),
+        new winston.transports.File({ filename: 'logs/combined.log' }),
     ],
     exitOnError: false
 })
 
-process.on('exit', () => {
-    if (logger.end) {
-        logger.end()
-    }
-})
+process.on('exit', () => logger.info('Process exiting...'))
 
 module.exports = logger
