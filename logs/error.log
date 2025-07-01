@@ -263,3 +263,8 @@
   level: 'error',
   service: 'ImageUploadService'
 }
+{
+  message: 'S3 connection failed: UnknownError',
+  level: 'error',
+  service: 'ImageUploadService'
+}

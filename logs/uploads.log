@@ -468,3 +468,43 @@
   level: 'info',
   service: 'ImageUploadService'
 }
+{
+  message: 'Swagger docs available at /docs',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Testing DB connection...',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Database connection established successfully',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Server running on ::: 3000',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Swagger docs: http://localhost:3000/docs',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'S3 connection failed: UnknownError',
+  level: 'error',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Gracefully shutting down...',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Database disconnected successfully',
+  level: 'info',
+  service: 'ImageUploadService'
+}
