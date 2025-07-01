@@ -1,0 +1,1846 @@
+{
+  error: TypeError: Missing parameter name at 1: https://git.new/pathToRegexpError
+      at name (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:73:19)
+      at lexer (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:91:27)
+      at lexer.next (<anonymous>)
+      at Iter.peek (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:106:38)
+      at Iter.tryConsume (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:112:28)
+      at Iter.text (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:128:30)
+      at consume (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:152:29)
+      at parse (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:183:20)
+      at C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:294:74
+      at Array.map (<anonymous>),
+  level: 'error',
+  message: 'uncaughtException: Missing parameter name at 1: https://git.new/pathToRegexpError\n' +
+    'TypeError: Missing parameter name at 1: https://git.new/pathToRegexpError\n' +
+    '    at name (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:73:19)\n' +
+    '    at lexer (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:91:27)\n' +
+    '    at lexer.next (<anonymous>)\n' +
+    '    at Iter.peek (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:106:38)\n' +
+    '    at Iter.tryConsume (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:112:28)\n' +
+    '    at Iter.text (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:128:30)\n' +
+    '    at consume (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:152:29)\n' +
+    '    at parse (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:183:20)\n' +
+    '    at C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:294:74\n' +
+    '    at Array.map (<anonymous>)',
+  stack: 'TypeError: Missing parameter name at 1: https://git.new/pathToRegexpError\n' +
+    '    at name (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:73:19)\n' +
+    '    at lexer (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:91:27)\n' +
+    '    at lexer.next (<anonymous>)\n' +
+    '    at Iter.peek (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:106:38)\n' +
+    '    at Iter.tryConsume (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:112:28)\n' +
+    '    at Iter.text (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:128:30)\n' +
+    '    at consume (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:152:29)\n' +
+    '    at parse (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:183:20)\n' +
+    '    at C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:294:74\n' +
+    '    at Array.map (<anonymous>)',
+  exception: true,
+  date: 'Sat Jun 28 2025 22:35:59 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 10832,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader',
+    execPath: 'C:\\nvm4w\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\nvm4w\\nodejs\\node.exe',
+      'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\server.js'
+    ],
+    memoryUsage: {
+      rss: 41680896,
+      heapTotal: 17534976,
+      heapUsed: 11972144,
+      external: 1962566,
+      arrayBuffers: 17091
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 128586.906 },
+  trace: [
+    {
+      column: 19,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'name',
+      line: 73,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'lexer',
+      line: 91,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'lexer.next',
+      line: null,
+      method: 'next',
+      native: false
+    },
+    {
+      column: 38,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Iter.peek',
+      line: 106,
+      method: 'peek',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Iter.tryConsume',
+      line: 112,
+      method: 'tryConsume',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Iter.text',
+      line: 128,
+      method: 'text',
+      native: false
+    },
+    {
+      column: 29,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'consume',
+      line: 152,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'parse',
+      line: 183,
+      method: null,
+      native: false
+    },
+    {
+      column: 74,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: null,
+      line: 294,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.map',
+      line: null,
+      method: 'map',
+      native: false
+    }
+  ],
+  service: 'ImageUploadService'
+}
+{
+  error: TypeError: Missing parameter name at 1: https://git.new/pathToRegexpError
+      at name (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:73:19)
+      at lexer (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:91:27)
+      at lexer.next (<anonymous>)
+      at Iter.peek (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:106:38)
+      at Iter.tryConsume (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:112:28)
+      at Iter.text (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:128:30)
+      at consume (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:152:29)
+      at parse (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:183:20)
+      at C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:294:74
+      at Array.map (<anonymous>),
+  level: 'error',
+  message: 'uncaughtException: Missing parameter name at 1: https://git.new/pathToRegexpError\n' +
+    'TypeError: Missing parameter name at 1: https://git.new/pathToRegexpError\n' +
+    '    at name (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:73:19)\n' +
+    '    at lexer (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:91:27)\n' +
+    '    at lexer.next (<anonymous>)\n' +
+    '    at Iter.peek (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:106:38)\n' +
+    '    at Iter.tryConsume (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:112:28)\n' +
+    '    at Iter.text (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:128:30)\n' +
+    '    at consume (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:152:29)\n' +
+    '    at parse (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:183:20)\n' +
+    '    at C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:294:74\n' +
+    '    at Array.map (<anonymous>)',
+  stack: 'TypeError: Missing parameter name at 1: https://git.new/pathToRegexpError\n' +
+    '    at name (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:73:19)\n' +
+    '    at lexer (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:91:27)\n' +
+    '    at lexer.next (<anonymous>)\n' +
+    '    at Iter.peek (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:106:38)\n' +
+    '    at Iter.tryConsume (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:112:28)\n' +
+    '    at Iter.text (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:128:30)\n' +
+    '    at consume (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:152:29)\n' +
+    '    at parse (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:183:20)\n' +
+    '    at C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:294:74\n' +
+    '    at Array.map (<anonymous>)',
+  exception: true,
+  date: 'Sat Jun 28 2025 22:36:49 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 15024,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader',
+    execPath: 'C:\\nvm4w\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\nvm4w\\nodejs\\node.exe',
+      'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\server.js'
+    ],
+    memoryUsage: {
+      rss: 41902080,
+      heapTotal: 17797120,
+      heapUsed: 11978872,
+      external: 1962566,
+      arrayBuffers: 17091
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 128637.125 },
+  trace: [
+    {
+      column: 19,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'name',
+      line: 73,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'lexer',
+      line: 91,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'lexer.next',
+      line: null,
+      method: 'next',
+      native: false
+    },
+    {
+      column: 38,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Iter.peek',
+      line: 106,
+      method: 'peek',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Iter.tryConsume',
+      line: 112,
+      method: 'tryConsume',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Iter.text',
+      line: 128,
+      method: 'text',
+      native: false
+    },
+    {
+      column: 29,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'consume',
+      line: 152,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'parse',
+      line: 183,
+      method: null,
+      native: false
+    },
+    {
+      column: 74,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: null,
+      line: 294,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.map',
+      line: null,
+      method: 'map',
+      native: false
+    }
+  ],
+  service: 'ImageUploadService'
+}
+{
+  error: TypeError: Missing parameter name at 1: https://git.new/pathToRegexpError
+      at name (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:73:19)
+      at lexer (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:91:27)
+      at lexer.next (<anonymous>)
+      at Iter.peek (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:106:38)
+      at Iter.tryConsume (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:112:28)
+      at Iter.text (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:128:30)
+      at consume (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:152:29)
+      at parse (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:183:20)
+      at C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:294:74
+      at Array.map (<anonymous>),
+  level: 'error',
+  message: 'uncaughtException: Missing parameter name at 1: https://git.new/pathToRegexpError\n' +
+    'TypeError: Missing parameter name at 1: https://git.new/pathToRegexpError\n' +
+    '    at name (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:73:19)\n' +
+    '    at lexer (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:91:27)\n' +
+    '    at lexer.next (<anonymous>)\n' +
+    '    at Iter.peek (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:106:38)\n' +
+    '    at Iter.tryConsume (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:112:28)\n' +
+    '    at Iter.text (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:128:30)\n' +
+    '    at consume (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:152:29)\n' +
+    '    at parse (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:183:20)\n' +
+    '    at C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:294:74\n' +
+    '    at Array.map (<anonymous>)',
+  stack: 'TypeError: Missing parameter name at 1: https://git.new/pathToRegexpError\n' +
+    '    at name (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:73:19)\n' +
+    '    at lexer (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:91:27)\n' +
+    '    at lexer.next (<anonymous>)\n' +
+    '    at Iter.peek (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:106:38)\n' +
+    '    at Iter.tryConsume (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:112:28)\n' +
+    '    at Iter.text (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:128:30)\n' +
+    '    at consume (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:152:29)\n' +
+    '    at parse (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:183:20)\n' +
+    '    at C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:294:74\n' +
+    '    at Array.map (<anonymous>)',
+  exception: true,
+  date: 'Sat Jun 28 2025 22:37:20 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 24284,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader',
+    execPath: 'C:\\nvm4w\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\nvm4w\\nodejs\\node.exe',
+      'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\server.js'
+    ],
+    memoryUsage: {
+      rss: 41607168,
+      heapTotal: 17534976,
+      heapUsed: 11955120,
+      external: 1962566,
+      arrayBuffers: 17091
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 128667.312 },
+  trace: [
+    {
+      column: 19,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'name',
+      line: 73,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'lexer',
+      line: 91,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'lexer.next',
+      line: null,
+      method: 'next',
+      native: false
+    },
+    {
+      column: 38,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Iter.peek',
+      line: 106,
+      method: 'peek',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Iter.tryConsume',
+      line: 112,
+      method: 'tryConsume',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Iter.text',
+      line: 128,
+      method: 'text',
+      native: false
+    },
+    {
+      column: 29,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'consume',
+      line: 152,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'parse',
+      line: 183,
+      method: null,
+      native: false
+    },
+    {
+      column: 74,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: null,
+      line: 294,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.map',
+      line: null,
+      method: 'map',
+      native: false
+    }
+  ],
+  service: 'ImageUploadService'
+}
+{
+  error: TypeError: Missing parameter name at 1: https://git.new/pathToRegexpError
+      at name (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:73:19)
+      at lexer (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:91:27)
+      at lexer.next (<anonymous>)
+      at Iter.peek (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:106:38)
+      at Iter.tryConsume (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:112:28)
+      at Iter.text (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:128:30)
+      at consume (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:152:29)
+      at parse (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:183:20)
+      at C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:294:74
+      at Array.map (<anonymous>),
+  level: 'error',
+  message: 'uncaughtException: Missing parameter name at 1: https://git.new/pathToRegexpError\n' +
+    'TypeError: Missing parameter name at 1: https://git.new/pathToRegexpError\n' +
+    '    at name (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:73:19)\n' +
+    '    at lexer (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:91:27)\n' +
+    '    at lexer.next (<anonymous>)\n' +
+    '    at Iter.peek (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:106:38)\n' +
+    '    at Iter.tryConsume (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:112:28)\n' +
+    '    at Iter.text (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:128:30)\n' +
+    '    at consume (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:152:29)\n' +
+    '    at parse (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:183:20)\n' +
+    '    at C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:294:74\n' +
+    '    at Array.map (<anonymous>)',
+  stack: 'TypeError: Missing parameter name at 1: https://git.new/pathToRegexpError\n' +
+    '    at name (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:73:19)\n' +
+    '    at lexer (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:91:27)\n' +
+    '    at lexer.next (<anonymous>)\n' +
+    '    at Iter.peek (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:106:38)\n' +
+    '    at Iter.tryConsume (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:112:28)\n' +
+    '    at Iter.text (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:128:30)\n' +
+    '    at consume (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:152:29)\n' +
+    '    at parse (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:183:20)\n' +
+    '    at C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:294:74\n' +
+    '    at Array.map (<anonymous>)',
+  exception: true,
+  date: 'Sat Jun 28 2025 22:38:26 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 2608,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader',
+    execPath: 'C:\\nvm4w\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\nvm4w\\nodejs\\node.exe',
+      'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\server.js'
+    ],
+    memoryUsage: {
+      rss: 43327488,
+      heapTotal: 18059264,
+      heapUsed: 11965560,
+      external: 1962566,
+      arrayBuffers: 17091
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 128733.937 },
+  trace: [
+    {
+      column: 19,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'name',
+      line: 73,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'lexer',
+      line: 91,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'lexer.next',
+      line: null,
+      method: 'next',
+      native: false
+    },
+    {
+      column: 38,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Iter.peek',
+      line: 106,
+      method: 'peek',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Iter.tryConsume',
+      line: 112,
+      method: 'tryConsume',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Iter.text',
+      line: 128,
+      method: 'text',
+      native: false
+    },
+    {
+      column: 29,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'consume',
+      line: 152,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'parse',
+      line: 183,
+      method: null,
+      native: false
+    },
+    {
+      column: 74,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: null,
+      line: 294,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.map',
+      line: null,
+      method: 'map',
+      native: false
+    }
+  ],
+  service: 'ImageUploadService'
+}
+{
+  error: TypeError: Missing parameter name at 1: https://git.new/pathToRegexpError
+      at name (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:73:19)
+      at lexer (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:91:27)
+      at lexer.next (<anonymous>)
+      at Iter.peek (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:106:38)
+      at Iter.tryConsume (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:112:28)
+      at Iter.text (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:128:30)
+      at consume (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:152:29)
+      at parse (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:183:20)
+      at C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:294:74
+      at Array.map (<anonymous>),
+  level: 'error',
+  message: 'uncaughtException: Missing parameter name at 1: https://git.new/pathToRegexpError\n' +
+    'TypeError: Missing parameter name at 1: https://git.new/pathToRegexpError\n' +
+    '    at name (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:73:19)\n' +
+    '    at lexer (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:91:27)\n' +
+    '    at lexer.next (<anonymous>)\n' +
+    '    at Iter.peek (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:106:38)\n' +
+    '    at Iter.tryConsume (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:112:28)\n' +
+    '    at Iter.text (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:128:30)\n' +
+    '    at consume (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:152:29)\n' +
+    '    at parse (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:183:20)\n' +
+    '    at C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:294:74\n' +
+    '    at Array.map (<anonymous>)',
+  stack: 'TypeError: Missing parameter name at 1: https://git.new/pathToRegexpError\n' +
+    '    at name (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:73:19)\n' +
+    '    at lexer (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:91:27)\n' +
+    '    at lexer.next (<anonymous>)\n' +
+    '    at Iter.peek (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:106:38)\n' +
+    '    at Iter.tryConsume (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:112:28)\n' +
+    '    at Iter.text (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:128:30)\n' +
+    '    at consume (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:152:29)\n' +
+    '    at parse (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:183:20)\n' +
+    '    at C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:294:74\n' +
+    '    at Array.map (<anonymous>)',
+  exception: true,
+  date: 'Sat Jun 28 2025 22:38:51 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 12264,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader',
+    execPath: 'C:\\nvm4w\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\nvm4w\\nodejs\\node.exe',
+      'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\server.js'
+    ],
+    memoryUsage: {
+      rss: 41521152,
+      heapTotal: 17797120,
+      heapUsed: 12316168,
+      external: 1962566,
+      arrayBuffers: 17091
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 128758.609 },
+  trace: [
+    {
+      column: 19,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'name',
+      line: 73,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'lexer',
+      line: 91,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'lexer.next',
+      line: null,
+      method: 'next',
+      native: false
+    },
+    {
+      column: 38,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Iter.peek',
+      line: 106,
+      method: 'peek',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Iter.tryConsume',
+      line: 112,
+      method: 'tryConsume',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Iter.text',
+      line: 128,
+      method: 'text',
+      native: false
+    },
+    {
+      column: 29,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'consume',
+      line: 152,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'parse',
+      line: 183,
+      method: null,
+      native: false
+    },
+    {
+      column: 74,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: null,
+      line: 294,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.map',
+      line: null,
+      method: 'map',
+      native: false
+    }
+  ],
+  service: 'ImageUploadService'
+}
+{
+  error: TypeError: Missing parameter name at 1: https://git.new/pathToRegexpError
+      at name (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:73:19)
+      at lexer (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:91:27)
+      at lexer.next (<anonymous>)
+      at Iter.peek (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:106:38)
+      at Iter.tryConsume (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:112:28)
+      at Iter.text (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:128:30)
+      at consume (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:152:29)
+      at parse (C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:183:20)
+      at C:\Users\joani\OneDrive\Desktop\image-uploader\node_modules\path-to-regexp\dist\index.js:294:74
+      at Array.map (<anonymous>),
+  level: 'error',
+  message: 'uncaughtException: Missing parameter name at 1: https://git.new/pathToRegexpError\n' +
+    'TypeError: Missing parameter name at 1: https://git.new/pathToRegexpError\n' +
+    '    at name (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:73:19)\n' +
+    '    at lexer (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:91:27)\n' +
+    '    at lexer.next (<anonymous>)\n' +
+    '    at Iter.peek (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:106:38)\n' +
+    '    at Iter.tryConsume (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:112:28)\n' +
+    '    at Iter.text (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:128:30)\n' +
+    '    at consume (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:152:29)\n' +
+    '    at parse (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:183:20)\n' +
+    '    at C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:294:74\n' +
+    '    at Array.map (<anonymous>)',
+  stack: 'TypeError: Missing parameter name at 1: https://git.new/pathToRegexpError\n' +
+    '    at name (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:73:19)\n' +
+    '    at lexer (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:91:27)\n' +
+    '    at lexer.next (<anonymous>)\n' +
+    '    at Iter.peek (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:106:38)\n' +
+    '    at Iter.tryConsume (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:112:28)\n' +
+    '    at Iter.text (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:128:30)\n' +
+    '    at consume (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:152:29)\n' +
+    '    at parse (C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:183:20)\n' +
+    '    at C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js:294:74\n' +
+    '    at Array.map (<anonymous>)',
+  exception: true,
+  date: 'Sat Jun 28 2025 22:40:59 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 18284,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader',
+    execPath: 'C:\\nvm4w\\nodejs\\node.exe',
+    version: 'v20.12.2',
+    argv: [
+      'C:\\nvm4w\\nodejs\\node.exe',
+      'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\server.js'
+    ],
+    memoryUsage: {
+      rss: 41689088,
+      heapTotal: 17534976,
+      heapUsed: 11958888,
+      external: 1962566,
+      arrayBuffers: 17091
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 128887.281 },
+  trace: [
+    {
+      column: 19,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'name',
+      line: 73,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'lexer',
+      line: 91,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'lexer.next',
+      line: null,
+      method: 'next',
+      native: false
+    },
+    {
+      column: 38,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Iter.peek',
+      line: 106,
+      method: 'peek',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Iter.tryConsume',
+      line: 112,
+      method: 'tryConsume',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'Iter.text',
+      line: 128,
+      method: 'text',
+      native: false
+    },
+    {
+      column: 29,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'consume',
+      line: 152,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: 'parse',
+      line: 183,
+      method: null,
+      native: false
+    },
+    {
+      column: 74,
+      file: 'C:\\Users\\joani\\OneDrive\\Desktop\\image-uploader\\node_modules\\path-to-regexp\\dist\\index.js',
+      function: null,
+      line: 294,
+      method: null,
+      native: false
+    },
+    {
+      column: null,
+      file: null,
+      function: 'Array.map',
+      line: null,
+      method: 'map',
+      native: false
+    }
+  ],
+  service: 'ImageUploadService'
+}
+{
+  error: Error: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.
+      at new PrismaClient (C:\Projects\image-uploader\node_modules\.prisma\client\default.js:43:11)
+      at new PrismaService (C:\Projects\image-uploader\config\dbConfig.js:9:23)
+      at Object.<anonymous> (C:\Projects\image-uploader\config\dbConfig.js:117:23)
+      at Module._compile (node:internal/modules/cjs/loader:1529:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+      at Module.load (node:internal/modules/cjs/loader:1275:32)
+      at Module._load (node:internal/modules/cjs/loader:1096:12)
+      at Module.require (node:internal/modules/cjs/loader:1298:19)
+      at require (node:internal/modules/helpers:182:18)
+      at Object.<anonymous> (C:\Projects\image-uploader\modules\controllers\authController.js:1:20),
+  level: 'error',
+  message: 'uncaughtException: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.\n' +
+    'Error: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.\n' +
+    '    at new PrismaClient (C:\\Projects\\image-uploader\\node_modules\\.prisma\\client\\default.js:43:11)\n' +
+    '    at new PrismaService (C:\\Projects\\image-uploader\\config\\dbConfig.js:9:23)\n' +
+    '    at Object.<anonymous> (C:\\Projects\\image-uploader\\config\\dbConfig.js:117:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1275:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1096:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1298:19)\n' +
+    '    at require (node:internal/modules/helpers:182:18)\n' +
+    '    at Object.<anonymous> (C:\\Projects\\image-uploader\\modules\\controllers\\authController.js:1:20)',
+  stack: 'Error: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.\n' +
+    '    at new PrismaClient (C:\\Projects\\image-uploader\\node_modules\\.prisma\\client\\default.js:43:11)\n' +
+    '    at new PrismaService (C:\\Projects\\image-uploader\\config\\dbConfig.js:9:23)\n' +
+    '    at Object.<anonymous> (C:\\Projects\\image-uploader\\config\\dbConfig.js:117:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1275:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1096:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1298:19)\n' +
+    '    at require (node:internal/modules/helpers:182:18)\n' +
+    '    at Object.<anonymous> (C:\\Projects\\image-uploader\\modules\\controllers\\authController.js:1:20)',
+  exception: true,
+  date: 'Tue Jul 01 2025 01:04:50 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 3888,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Projects\\image-uploader',
+    execPath: 'C:\\nvm4w\\nodejs\\node.exe',
+    version: 'v20.19.0',
+    argv: [
+      'C:\\nvm4w\\nodejs\\node.exe',
+      'C:\\Projects\\image-uploader\\server.js'
+    ],
+    memoryUsage: {
+      rss: 42082304,
+      heapTotal: 17559552,
+      heapUsed: 12535736,
+      external: 1999053,
+      arrayBuffers: 17091
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 310315.312 },
+  trace: [
+    {
+      column: 11,
+      file: 'C:\\Projects\\image-uploader\\node_modules\\.prisma\\client\\default.js',
+      function: 'new PrismaClient',
+      line: 43,
+      method: null,
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Projects\\image-uploader\\config\\dbConfig.js',
+      function: 'new PrismaService',
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Projects\\image-uploader\\config\\dbConfig.js',
+      function: null,
+      line: 117,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1529,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1613,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1275,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1096,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1298,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 182,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Projects\\image-uploader\\modules\\controllers\\authController.js',
+      function: null,
+      line: 1,
+      method: null,
+      native: false
+    }
+  ],
+  service: 'ImageUploadService'
+}
+{
+  error: Error: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.
+      at new PrismaClient (C:\Projects\image-uploader\node_modules\.prisma\client\default.js:43:11)
+      at new PrismaService (C:\Projects\image-uploader\config\dbConfig.js:9:23)
+      at Object.<anonymous> (C:\Projects\image-uploader\config\dbConfig.js:117:23)
+      at Module._compile (node:internal/modules/cjs/loader:1529:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+      at Module.load (node:internal/modules/cjs/loader:1275:32)
+      at Module._load (node:internal/modules/cjs/loader:1096:12)
+      at Module.require (node:internal/modules/cjs/loader:1298:19)
+      at require (node:internal/modules/helpers:182:18)
+      at Object.<anonymous> (C:\Projects\image-uploader\modules\controllers\authController.js:1:20),
+  level: 'error',
+  message: 'uncaughtException: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.\n' +
+    'Error: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.\n' +
+    '    at new PrismaClient (C:\\Projects\\image-uploader\\node_modules\\.prisma\\client\\default.js:43:11)\n' +
+    '    at new PrismaService (C:\\Projects\\image-uploader\\config\\dbConfig.js:9:23)\n' +
+    '    at Object.<anonymous> (C:\\Projects\\image-uploader\\config\\dbConfig.js:117:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1275:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1096:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1298:19)\n' +
+    '    at require (node:internal/modules/helpers:182:18)\n' +
+    '    at Object.<anonymous> (C:\\Projects\\image-uploader\\modules\\controllers\\authController.js:1:20)',
+  stack: 'Error: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.\n' +
+    '    at new PrismaClient (C:\\Projects\\image-uploader\\node_modules\\.prisma\\client\\default.js:43:11)\n' +
+    '    at new PrismaService (C:\\Projects\\image-uploader\\config\\dbConfig.js:9:23)\n' +
+    '    at Object.<anonymous> (C:\\Projects\\image-uploader\\config\\dbConfig.js:117:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1275:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1096:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1298:19)\n' +
+    '    at require (node:internal/modules/helpers:182:18)\n' +
+    '    at Object.<anonymous> (C:\\Projects\\image-uploader\\modules\\controllers\\authController.js:1:20)',
+  exception: true,
+  date: 'Tue Jul 01 2025 01:05:49 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 16260,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Projects\\image-uploader',
+    execPath: 'C:\\nvm4w\\nodejs\\node.exe',
+    version: 'v20.19.0',
+    argv: [
+      'C:\\nvm4w\\nodejs\\node.exe',
+      'C:\\Projects\\image-uploader\\server.js'
+    ],
+    memoryUsage: {
+      rss: 43753472,
+      heapTotal: 17821696,
+      heapUsed: 12455448,
+      external: 1999053,
+      arrayBuffers: 17091
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 310374.296 },
+  trace: [
+    {
+      column: 11,
+      file: 'C:\\Projects\\image-uploader\\node_modules\\.prisma\\client\\default.js',
+      function: 'new PrismaClient',
+      line: 43,
+      method: null,
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Projects\\image-uploader\\config\\dbConfig.js',
+      function: 'new PrismaService',
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Projects\\image-uploader\\config\\dbConfig.js',
+      function: null,
+      line: 117,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1529,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1613,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1275,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1096,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1298,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 182,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Projects\\image-uploader\\modules\\controllers\\authController.js',
+      function: null,
+      line: 1,
+      method: null,
+      native: false
+    }
+  ],
+  service: 'ImageUploadService'
+}
+{
+  error: Error: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.
+      at new PrismaClient (C:\Projects\image-uploader\node_modules\.prisma\client\default.js:43:11)
+      at new PrismaService (C:\Projects\image-uploader\config\dbConfig.js:9:23)
+      at Object.<anonymous> (C:\Projects\image-uploader\config\dbConfig.js:117:23)
+      at Module._compile (node:internal/modules/cjs/loader:1529:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+      at Module.load (node:internal/modules/cjs/loader:1275:32)
+      at Module._load (node:internal/modules/cjs/loader:1096:12)
+      at Module.require (node:internal/modules/cjs/loader:1298:19)
+      at require (node:internal/modules/helpers:182:18)
+      at Object.<anonymous> (C:\Projects\image-uploader\modules\controllers\authController.js:1:20),
+  level: 'error',
+  message: 'uncaughtException: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.\n' +
+    'Error: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.\n' +
+    '    at new PrismaClient (C:\\Projects\\image-uploader\\node_modules\\.prisma\\client\\default.js:43:11)\n' +
+    '    at new PrismaService (C:\\Projects\\image-uploader\\config\\dbConfig.js:9:23)\n' +
+    '    at Object.<anonymous> (C:\\Projects\\image-uploader\\config\\dbConfig.js:117:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1275:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1096:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1298:19)\n' +
+    '    at require (node:internal/modules/helpers:182:18)\n' +
+    '    at Object.<anonymous> (C:\\Projects\\image-uploader\\modules\\controllers\\authController.js:1:20)',
+  stack: 'Error: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.\n' +
+    '    at new PrismaClient (C:\\Projects\\image-uploader\\node_modules\\.prisma\\client\\default.js:43:11)\n' +
+    '    at new PrismaService (C:\\Projects\\image-uploader\\config\\dbConfig.js:9:23)\n' +
+    '    at Object.<anonymous> (C:\\Projects\\image-uploader\\config\\dbConfig.js:117:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1275:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1096:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1298:19)\n' +
+    '    at require (node:internal/modules/helpers:182:18)\n' +
+    '    at Object.<anonymous> (C:\\Projects\\image-uploader\\modules\\controllers\\authController.js:1:20)',
+  exception: true,
+  date: 'Tue Jul 01 2025 01:07:55 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 20512,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Projects\\image-uploader',
+    execPath: 'C:\\nvm4w\\nodejs\\node.exe',
+    version: 'v20.19.0',
+    argv: [
+      'C:\\nvm4w\\nodejs\\node.exe',
+      'C:\\Projects\\image-uploader\\server.js'
+    ],
+    memoryUsage: {
+      rss: 42168320,
+      heapTotal: 17559552,
+      heapUsed: 12505432,
+      external: 1999053,
+      arrayBuffers: 17091
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 310500.953 },
+  trace: [
+    {
+      column: 11,
+      file: 'C:\\Projects\\image-uploader\\node_modules\\.prisma\\client\\default.js',
+      function: 'new PrismaClient',
+      line: 43,
+      method: null,
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Projects\\image-uploader\\config\\dbConfig.js',
+      function: 'new PrismaService',
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Projects\\image-uploader\\config\\dbConfig.js',
+      function: null,
+      line: 117,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1529,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1613,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1275,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1096,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1298,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 182,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Projects\\image-uploader\\modules\\controllers\\authController.js',
+      function: null,
+      line: 1,
+      method: null,
+      native: false
+    }
+  ],
+  service: 'ImageUploadService'
+}
+{
+  error: Error: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.
+      at new PrismaClient (C:\Projects\image-uploader\node_modules\.prisma\client\default.js:43:11)
+      at new PrismaService (C:\Projects\image-uploader\config\dbConfig.js:9:23)
+      at Object.<anonymous> (C:\Projects\image-uploader\config\dbConfig.js:117:23)
+      at Module._compile (node:internal/modules/cjs/loader:1529:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+      at Module.load (node:internal/modules/cjs/loader:1275:32)
+      at Module._load (node:internal/modules/cjs/loader:1096:12)
+      at Module.require (node:internal/modules/cjs/loader:1298:19)
+      at require (node:internal/modules/helpers:182:18)
+      at Object.<anonymous> (C:\Projects\image-uploader\modules\controllers\authController.js:1:20),
+  level: 'error',
+  message: 'uncaughtException: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.\n' +
+    'Error: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.\n' +
+    '    at new PrismaClient (C:\\Projects\\image-uploader\\node_modules\\.prisma\\client\\default.js:43:11)\n' +
+    '    at new PrismaService (C:\\Projects\\image-uploader\\config\\dbConfig.js:9:23)\n' +
+    '    at Object.<anonymous> (C:\\Projects\\image-uploader\\config\\dbConfig.js:117:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1275:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1096:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1298:19)\n' +
+    '    at require (node:internal/modules/helpers:182:18)\n' +
+    '    at Object.<anonymous> (C:\\Projects\\image-uploader\\modules\\controllers\\authController.js:1:20)',
+  stack: 'Error: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.\n' +
+    '    at new PrismaClient (C:\\Projects\\image-uploader\\node_modules\\.prisma\\client\\default.js:43:11)\n' +
+    '    at new PrismaService (C:\\Projects\\image-uploader\\config\\dbConfig.js:9:23)\n' +
+    '    at Object.<anonymous> (C:\\Projects\\image-uploader\\config\\dbConfig.js:117:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1275:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1096:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1298:19)\n' +
+    '    at require (node:internal/modules/helpers:182:18)\n' +
+    '    at Object.<anonymous> (C:\\Projects\\image-uploader\\modules\\controllers\\authController.js:1:20)',
+  exception: true,
+  date: 'Tue Jul 01 2025 01:19:57 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 19852,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Projects\\image-uploader',
+    execPath: 'C:\\nvm4w\\nodejs\\node.exe',
+    version: 'v20.19.0',
+    argv: [
+      'C:\\nvm4w\\nodejs\\node.exe',
+      'C:\\Projects\\image-uploader\\server.js'
+    ],
+    memoryUsage: {
+      rss: 42033152,
+      heapTotal: 17559552,
+      heapUsed: 12507992,
+      external: 1999053,
+      arrayBuffers: 17091
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 311222.968 },
+  trace: [
+    {
+      column: 11,
+      file: 'C:\\Projects\\image-uploader\\node_modules\\.prisma\\client\\default.js',
+      function: 'new PrismaClient',
+      line: 43,
+      method: null,
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Projects\\image-uploader\\config\\dbConfig.js',
+      function: 'new PrismaService',
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Projects\\image-uploader\\config\\dbConfig.js',
+      function: null,
+      line: 117,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1529,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1613,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1275,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1096,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1298,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 182,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Projects\\image-uploader\\modules\\controllers\\authController.js',
+      function: null,
+      line: 1,
+      method: null,
+      native: false
+    }
+  ],
+  service: 'ImageUploadService'
+}
+{
+  error: Error: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.
+      at new PrismaClient (C:\Projects\image-uploader\node_modules\.prisma\client\default.js:43:11)
+      at new PrismaService (C:\Projects\image-uploader\config\dbConfig.js:9:23)
+      at Object.<anonymous> (C:\Projects\image-uploader\config\dbConfig.js:117:23)
+      at Module._compile (node:internal/modules/cjs/loader:1529:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+      at Module.load (node:internal/modules/cjs/loader:1275:32)
+      at Module._load (node:internal/modules/cjs/loader:1096:12)
+      at Module.require (node:internal/modules/cjs/loader:1298:19)
+      at require (node:internal/modules/helpers:182:18)
+      at Object.<anonymous> (C:\Projects\image-uploader\modules\controllers\authController.js:1:20),
+  level: 'error',
+  message: 'uncaughtException: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.\n' +
+    'Error: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.\n' +
+    '    at new PrismaClient (C:\\Projects\\image-uploader\\node_modules\\.prisma\\client\\default.js:43:11)\n' +
+    '    at new PrismaService (C:\\Projects\\image-uploader\\config\\dbConfig.js:9:23)\n' +
+    '    at Object.<anonymous> (C:\\Projects\\image-uploader\\config\\dbConfig.js:117:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1275:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1096:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1298:19)\n' +
+    '    at require (node:internal/modules/helpers:182:18)\n' +
+    '    at Object.<anonymous> (C:\\Projects\\image-uploader\\modules\\controllers\\authController.js:1:20)',
+  stack: 'Error: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.\n' +
+    '    at new PrismaClient (C:\\Projects\\image-uploader\\node_modules\\.prisma\\client\\default.js:43:11)\n' +
+    '    at new PrismaService (C:\\Projects\\image-uploader\\config\\dbConfig.js:9:23)\n' +
+    '    at Object.<anonymous> (C:\\Projects\\image-uploader\\config\\dbConfig.js:117:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1275:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1096:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1298:19)\n' +
+    '    at require (node:internal/modules/helpers:182:18)\n' +
+    '    at Object.<anonymous> (C:\\Projects\\image-uploader\\modules\\controllers\\authController.js:1:20)',
+  exception: true,
+  date: 'Tue Jul 01 2025 01:26:55 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 20900,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Projects\\image-uploader',
+    execPath: 'C:\\nvm4w\\nodejs\\node.exe',
+    version: 'v20.19.0',
+    argv: [
+      'C:\\nvm4w\\nodejs\\node.exe',
+      'C:\\Projects\\image-uploader\\server.js'
+    ],
+    memoryUsage: {
+      rss: 41869312,
+      heapTotal: 17559552,
+      heapUsed: 12497696,
+      external: 1999053,
+      arrayBuffers: 17091
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 311640.453 },
+  trace: [
+    {
+      column: 11,
+      file: 'C:\\Projects\\image-uploader\\node_modules\\.prisma\\client\\default.js',
+      function: 'new PrismaClient',
+      line: 43,
+      method: null,
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Projects\\image-uploader\\config\\dbConfig.js',
+      function: 'new PrismaService',
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Projects\\image-uploader\\config\\dbConfig.js',
+      function: null,
+      line: 117,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1529,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1613,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1275,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1096,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1298,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 182,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Projects\\image-uploader\\modules\\controllers\\authController.js',
+      function: null,
+      line: 1,
+      method: null,
+      native: false
+    }
+  ],
+  service: 'ImageUploadService'
+}
+{
+  error: Error: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.
+      at new PrismaClient (C:\Projects\image-uploader\node_modules\.prisma\client\default.js:43:11)
+      at new PrismaService (C:\Projects\image-uploader\config\dbConfig.js:9:23)
+      at Object.<anonymous> (C:\Projects\image-uploader\config\dbConfig.js:117:23)
+      at Module._compile (node:internal/modules/cjs/loader:1529:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+      at Module.load (node:internal/modules/cjs/loader:1275:32)
+      at Module._load (node:internal/modules/cjs/loader:1096:12)
+      at Module.require (node:internal/modules/cjs/loader:1298:19)
+      at require (node:internal/modules/helpers:182:18)
+      at Object.<anonymous> (C:\Projects\image-uploader\modules\controllers\authController.js:1:20),
+  level: 'error',
+  message: 'uncaughtException: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.\n' +
+    'Error: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.\n' +
+    '    at new PrismaClient (C:\\Projects\\image-uploader\\node_modules\\.prisma\\client\\default.js:43:11)\n' +
+    '    at new PrismaService (C:\\Projects\\image-uploader\\config\\dbConfig.js:9:23)\n' +
+    '    at Object.<anonymous> (C:\\Projects\\image-uploader\\config\\dbConfig.js:117:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1275:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1096:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1298:19)\n' +
+    '    at require (node:internal/modules/helpers:182:18)\n' +
+    '    at Object.<anonymous> (C:\\Projects\\image-uploader\\modules\\controllers\\authController.js:1:20)',
+  stack: 'Error: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.\n' +
+    '    at new PrismaClient (C:\\Projects\\image-uploader\\node_modules\\.prisma\\client\\default.js:43:11)\n' +
+    '    at new PrismaService (C:\\Projects\\image-uploader\\config\\dbConfig.js:9:23)\n' +
+    '    at Object.<anonymous> (C:\\Projects\\image-uploader\\config\\dbConfig.js:117:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1275:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1096:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1298:19)\n' +
+    '    at require (node:internal/modules/helpers:182:18)\n' +
+    '    at Object.<anonymous> (C:\\Projects\\image-uploader\\modules\\controllers\\authController.js:1:20)',
+  exception: true,
+  date: 'Tue Jul 01 2025 01:35:57 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 14776,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Projects\\image-uploader',
+    execPath: 'C:\\nvm4w\\nodejs\\node.exe',
+    version: 'v20.19.0',
+    argv: [
+      'C:\\nvm4w\\nodejs\\node.exe',
+      'C:\\Projects\\image-uploader\\server.js'
+    ],
+    memoryUsage: {
+      rss: 42438656,
+      heapTotal: 17559552,
+      heapUsed: 12363992,
+      external: 1877835,
+      arrayBuffers: 16915
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 312182.609 },
+  trace: [
+    {
+      column: 11,
+      file: 'C:\\Projects\\image-uploader\\node_modules\\.prisma\\client\\default.js',
+      function: 'new PrismaClient',
+      line: 43,
+      method: null,
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Projects\\image-uploader\\config\\dbConfig.js',
+      function: 'new PrismaService',
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Projects\\image-uploader\\config\\dbConfig.js',
+      function: null,
+      line: 117,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1529,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1613,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1275,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1096,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1298,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 182,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Projects\\image-uploader\\modules\\controllers\\authController.js',
+      function: null,
+      line: 1,
+      method: null,
+      native: false
+    }
+  ],
+  service: 'ImageUploadService'
+}
+{
+  error: Error: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.
+      at new PrismaClient (C:\Projects\image-uploader\node_modules\.prisma\client\default.js:43:11)
+      at new PrismaService (C:\Projects\image-uploader\config\dbConfig.js:9:23)
+      at Object.<anonymous> (C:\Projects\image-uploader\config\dbConfig.js:117:23)
+      at Module._compile (node:internal/modules/cjs/loader:1529:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+      at Module.load (node:internal/modules/cjs/loader:1275:32)
+      at Module._load (node:internal/modules/cjs/loader:1096:12)
+      at Module.require (node:internal/modules/cjs/loader:1298:19)
+      at require (node:internal/modules/helpers:182:18)
+      at Object.<anonymous> (C:\Projects\image-uploader\modules\controllers\authController.js:1:20),
+  level: 'error',
+  message: 'uncaughtException: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.\n' +
+    'Error: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.\n' +
+    '    at new PrismaClient (C:\\Projects\\image-uploader\\node_modules\\.prisma\\client\\default.js:43:11)\n' +
+    '    at new PrismaService (C:\\Projects\\image-uploader\\config\\dbConfig.js:9:23)\n' +
+    '    at Object.<anonymous> (C:\\Projects\\image-uploader\\config\\dbConfig.js:117:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1275:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1096:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1298:19)\n' +
+    '    at require (node:internal/modules/helpers:182:18)\n' +
+    '    at Object.<anonymous> (C:\\Projects\\image-uploader\\modules\\controllers\\authController.js:1:20)',
+  stack: 'Error: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.\n' +
+    '    at new PrismaClient (C:\\Projects\\image-uploader\\node_modules\\.prisma\\client\\default.js:43:11)\n' +
+    '    at new PrismaService (C:\\Projects\\image-uploader\\config\\dbConfig.js:9:23)\n' +
+    '    at Object.<anonymous> (C:\\Projects\\image-uploader\\config\\dbConfig.js:117:23)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1275:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:1096:12)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1298:19)\n' +
+    '    at require (node:internal/modules/helpers:182:18)\n' +
+    '    at Object.<anonymous> (C:\\Projects\\image-uploader\\modules\\controllers\\authController.js:1:20)',
+  exception: true,
+  date: 'Tue Jul 01 2025 01:38:10 GMT+0100 (West Africa Standard Time)',
+  process: {
+    pid: 25920,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Projects\\image-uploader',
+    execPath: 'C:\\nvm4w\\nodejs\\node.exe',
+    version: 'v20.19.0',
+    argv: [
+      'C:\\nvm4w\\nodejs\\node.exe',
+      'C:\\Projects\\image-uploader\\server.js'
+    ],
+    memoryUsage: {
+      rss: 42434560,
+      heapTotal: 17297408,
+      heapUsed: 12246784,
+      external: 1877835,
+      arrayBuffers: 16915
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 312315.203 },
+  trace: [
+    {
+      column: 11,
+      file: 'C:\\Projects\\image-uploader\\node_modules\\.prisma\\client\\default.js',
+      function: 'new PrismaClient',
+      line: 43,
+      method: null,
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Projects\\image-uploader\\config\\dbConfig.js',
+      function: 'new PrismaService',
+      line: 9,
+      method: null,
+      native: false
+    },
+    {
+      column: 23,
+      file: 'C:\\Projects\\image-uploader\\config\\dbConfig.js',
+      function: null,
+      line: 117,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1529,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1613,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1275,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 1096,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1298,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 182,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Projects\\image-uploader\\modules\\controllers\\authController.js',
+      function: null,
+      line: 1,
+      method: null,
+      native: false
+    }
+  ],
+  service: 'ImageUploadService'
+}

@@ -1,6 +1,5 @@
 require("dotenv").config();
-const { z } = require('zod');
-const logger = require('../utils/logger');
+const { z, ZodError } = require('zod');
 
 // Environment variables schema
 const envSchema = z.object({
@@ -22,15 +21,16 @@ const envSchema = z.object({
     //JWT 
     JWT_SECRET: z.string().min(32, 'JWT secret must be at least 32 characters'),
     JWT_EXPIRES_IN: z.string().default('7d'),
+    BCRYPT_SALT_ROUNDS: z.coerce.number().default(12),
 
     //Swagger
     ENABLE_SWAGGER_IN_PROD: z.coerce.boolean().default(false),
-    
+
     //Upload Configuration
     MAX_FILE_SIZE: z.preprocess(
         (val) => {
             if (typeof val === 'number') return val
-            const str = string(val)
+            const str = String(val)
             const match = str.match(/^(\d+)(mb)?$/i)
             return match ? parseInt(match[1]) * (match[2] ? 1024 * 1024 : 1) : parseInt(str)
         },
@@ -43,6 +43,7 @@ const envSchema = z.object({
     //Rate Limiting
     RATE_LIMIT_WINDOW_MS: z.coerce.number().default('900000'), // 15 minutes
     RATE_LIMIT_MAX_REQUESTS: z.coerce.number().default('100'),
+    UPLOAD_RATE_LIMIT: z.coerce.number().default(10),
 
     //Storage Configuration
     STORAGE_TYPE: z.enum(['local', 's3']).default('s3'),
@@ -60,10 +61,15 @@ let parsedEnv
 try {
     parsedEnv = envSchema.parse(process.env)
 } catch (error) {
-    logger.error('Invalid environment configuration')
-    error.errors.forEach(err => {
-        logger.error(` ${err.path.join('.')}: ${err.message}`)
-    })
+    console.error('Invalid environment configuration')
+
+    if (error instanceof ZodError) {
+        error.errors.forEach(err => {
+            console.error(` ${err.path.join('.')}: ${err.message}`)
+        })
+    } else {
+        console.error(error)
+    }
     process.exit(1)
 }
 

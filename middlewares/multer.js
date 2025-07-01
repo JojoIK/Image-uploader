@@ -1,5 +1,4 @@
 const multer = require("multer");
-const path = require("path");
 const { s3Config } = require("../config/s3Config");
 const { BadRequestException } = require("../utils/appError");
 const { envConfig } = require("../config/envConfig");

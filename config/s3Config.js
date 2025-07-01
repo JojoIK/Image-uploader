@@ -13,7 +13,8 @@ const s3Client = new S3Client({
     requestHandler: {
         requestTimeout: 30000, //30 seconds
         httpsAgent: { maxSockets: 25 }
-    }
+    },
+    maxAttempts: 3
 })
 
 // Base S3 configuration
