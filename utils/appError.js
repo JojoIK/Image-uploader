@@ -1,10 +1,10 @@
-const { HTTPSTATUS } = require("../config/httpConfig.js");
+const { HTTP_STATUS } = require("../config/httpConfig.js");
 const { ErrorCodeEnum } = require("./errorCodeEnum.js");
 
 class AppError extends Error {
     constructor(
         message,
-        statusCode = HTTPSTATUS.INTERNAL_SERVER_ERROR,
+        statusCode = HTTP_STATUS.INTERNAL_SERVER_ERROR,
         errorCode = ErrorCodeEnum.INTERNAL_SERVER_ERROR
     ) {
         super(message)
@@ -22,31 +22,31 @@ class HttpException extends AppError {
 
 class InternalServerException extends AppError {
     constructor(message = 'Internal Server Error', errorCode = ErrorCodeEnum.INTERNAL_SERVER_ERROR) {
-        super(message, HTTPSTATUS.INTERNAL_SERVER_ERROR, errorCode)
+        super(message, HTTP_STATUS.INTERNAL_SERVER_ERROR, errorCode)
     }
 }
 
 class NotFoundException extends AppError {
     constructor(message = 'Resource not found', errorCode = ErrorCodeEnum.RESOURCE_NOT_FOUND) {
-        super(message, HTTPSTATUS.NOT_FOUND, errorCode)
+        super(message, HTTP_STATUS.NOT_FOUND, errorCode)
     }
 }
 
 class BadRequestException extends AppError {
     constructor(message = 'Bad Request', errorCode = ErrorCodeEnum.VALIDATION_ERROR) {
-        super(message, HTTPSTATUS.BAD_REQUEST, errorCode)
+        super(message, HTTP_STATUS.BAD_REQUEST, errorCode)
     }
 }
 
 class UnauthorizedException extends AppError {
     constructor(message = 'Unauthorized Access', errorCode = ErrorCodeEnum.ACCESS_UNAUTHORIZED) {
-        super(message, HTTPSTATUS.UNAUTHORIZED, errorCode)
+        super(message, HTTP_STATUS.UNAUTHORIZED, errorCode)
     }
 }
 
 class ForbiddenException extends AppError {
     constructor(message = 'Forbidden Access', errorCode = ErrorCodeEnum.ACCESS_FORBIDDEN) {
-        super(message, HTTPSTATUS.FORBIDDEN, errorCode)
+        super(message, HTTP_STATUS.FORBIDDEN, errorCode)
     }
 }
 

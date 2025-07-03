@@ -127,9 +127,15 @@ class AuthController {
 
 
     //Retrieve authenticated user info
-    async me(req, res) {
+    async me(req, res, next) {
         try {
             const userId = req.user?.id
+
+            if (!userId) {
+                return res.status(HTTP_STATUS.UNAUTHORIZED).json(
+                    createResponse(false, 'User is not authenticated')
+                )
+            }
 
             // Fetch user info from DB with selected fields
             const user = await prisma.user.findUnique({
