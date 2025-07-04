@@ -23,7 +23,7 @@ registry.register('ErrorResponse', ErrorResponse)
 // Register API paths 
 registry.registerPath({
     method: 'post',
-    path: '/api/v1/upload/images/upload',
+    path: '/upload/images/upload',
     summary: 'Upload a single image',
     tag: ['Upload'],
     responses: {
@@ -40,7 +40,7 @@ registry.registerPath({
 
 registry.registerPath({
     method: 'post',
-    path: '/api/v1/upload/images/upload/multiple',
+    path: '/upload/images/upload/multiple',
     summary: 'Upload multiple images',
     tag: ['Upload'],
     responses: {
@@ -57,7 +57,7 @@ registry.registerPath({
 
 registry.registerPath({
     method: 'get',
-    path: '/api/v1/upload/images/{id}',
+    path: '/upload/images/{id}',
     summary: 'Get image by ID',
     tag: ['Images'],
     request: {
@@ -77,7 +77,7 @@ registry.registerPath({
 
 registry.registerPath({
     method: 'delete',
-    path: '/api/v1/upload/images/{id}',
+    path: '/upload/images/{id}',
     summary: 'Delete image by ID',
     tag: ['Images'],
     request: {
@@ -97,7 +97,7 @@ registry.registerPath({
 
 registry.registerPath({
     method: 'get',
-    path: '/api/v1/upload/images',
+    path: '/upload/images',
     summary: 'List all images for authenticated user',
     tag: ['Images'],
     responses: {
@@ -110,7 +110,7 @@ registry.registerPath({
 
 registry.registerPath({
     method: 'get',
-    path: '/api/v1/upload/images/{id}/transformed',
+    path: '/upload/images/{id}/transformed',
     summary: 'Get transformed version of an image',
     tag: ['Images'],
     request: {
@@ -143,7 +143,7 @@ registry.registerPath({
 
 registry.registerPath({
     method: 'get',
-    path: '/api/v1/upload/images/stats',
+    path: '/upload/images/stats',
     summary: 'Get image statistics',
     tags: ['Images'],
     responses: {
@@ -157,7 +157,7 @@ registry.registerPath({
 // Auth routes
 registry.registerPath({
     method: 'post',
-    path: '/api/v1/auth/register',
+    path: '/auth/register',
     summary: 'Register a new user',
     tags: ['Auth'],
     responses: {
@@ -171,7 +171,7 @@ registry.registerPath({
 
 registry.registerPath({
     method: 'post',
-    path: '/api/v1/auth/login',
+    path: '/auth/login',
     summary: 'Login user',
     tags: ['Auth'],
     responses: {
@@ -188,7 +188,7 @@ registry.registerPath({
 
 registry.registerPath({
     method: 'post',
-    path: '/api/v1/auth/logout',
+    path: '/auth/logout',
     summary: 'Logout user',
     tags: ['Auth'],
     responses: {
@@ -201,7 +201,7 @@ registry.registerPath({
 
 registry.registerPath({
     method: 'get',
-    path: '/api/v1/auth/me',
+    path: '/auth/me',
     summary: 'Get current user',
     tags: ['Auth'],
     responses: {
