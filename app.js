@@ -31,7 +31,7 @@ app.use(helmet({ crossOriginResourcePolicy: { policy: 'cross-origin' } }))
 // CORS config
 app.use(cors(
     {
-        //origin: envConfig.allowedOrigins.length > 0 ? envConfig.allowedOrigins : ['http://localhost:3000'],
+        origin: envConfig.allowedOrigins.length > 0 ? envConfig.allowedOrigins : ['http://localhost:3000',  'http://localhost:10000'],
         credentials: true,
         methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
         allowedHeaders: ['Content-Type', 'Authorization']

@@ -1234,3 +1234,27 @@
   level: 'error',
   service: 'ImageUploadService'
 }
+{
+  message: 'S3 connection failed: UnknownError',
+  level: 'error',
+  service: 'ImageUploadService'
+}
+{
+  service: 'ImageUploadService',
+  name: 'Error',
+  message: 'Unhandled Error No token provided',
+  stack: 'Error: No token provided\n' +
+    '    at authenticateUser (C:\\Projects\\image-uploader\\middlewares\\authentication.js:12:21)\n' +
+    '    at Layer.handleRequest (C:\\Projects\\image-uploader\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at next (C:\\Projects\\image-uploader\\node_modules\\router\\lib\\route.js:157:13)\n' +
+    '    at Route.dispatch (C:\\Projects\\image-uploader\\node_modules\\router\\lib\\route.js:117:3)\n' +
+    '    at handle (C:\\Projects\\image-uploader\\node_modules\\router\\index.js:435:11)\n' +
+    '    at Layer.handleRequest (C:\\Projects\\image-uploader\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at C:\\Projects\\image-uploader\\node_modules\\router\\index.js:295:15\n' +
+    '    at param (C:\\Projects\\image-uploader\\node_modules\\router\\index.js:600:14)\n' +
+    '    at param (C:\\Projects\\image-uploader\\node_modules\\router\\index.js:610:14)\n' +
+    '    at processParams (C:\\Projects\\image-uploader\\node_modules\\router\\index.js:664:3)',
+  path: '/api/v1/upload/images/stats',
+  method: 'GET',
+  level: 'error'
+}
