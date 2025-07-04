@@ -24,7 +24,7 @@ const envSchema = z.object({
     BCRYPT_SALT_ROUNDS: z.coerce.number().default(12),
 
     //Swagger
-    ENABLE_SWAGGER_IN_PROD: z.coerce.boolean().default(false),
+    ENABLE_SWAGGER_IN_PROD: z.coerce.boolean().default(true),
 
     //Upload Configuration
     MAX_FILE_SIZE: z.preprocess(
