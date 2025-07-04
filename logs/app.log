@@ -1537,3 +1537,281 @@
   target: 'quaint::connector::postgres::native',
   level: 'error'
 }
+{
+  message: 'Swagger docs available at /docs',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Testing DB connection...',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'S3 connection failed: UnknownError',
+  level: 'error',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Database connection established successfully',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Server running on ::: 3000',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Swagger docs: http://localhost:3000/docs',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Incoming request: POST //api/v1/auth/login',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Incoming request: POST //api/v1/auth/login',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Incoming request: POST /api/v1/auth/login',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Incoming request: POST /api/v1/auth/me',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Incoming request: GET /api/v1/auth/me',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  service: 'ImageUploadService',
+  name: 'Error',
+  message: 'Unhandled Error No token provided',
+  stack: 'Error: No token provided\n' +
+    '    at authenticateUser (C:\\Projects\\image-uploader\\middlewares\\authentication.js:12:21)\n' +
+    '    at Layer.handleRequest (C:\\Projects\\image-uploader\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at next (C:\\Projects\\image-uploader\\node_modules\\router\\lib\\route.js:157:13)\n' +
+    '    at Route.dispatch (C:\\Projects\\image-uploader\\node_modules\\router\\lib\\route.js:117:3)\n' +
+    '    at handle (C:\\Projects\\image-uploader\\node_modules\\router\\index.js:435:11)\n' +
+    '    at Layer.handleRequest (C:\\Projects\\image-uploader\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at C:\\Projects\\image-uploader\\node_modules\\router\\index.js:295:15\n' +
+    '    at processParams (C:\\Projects\\image-uploader\\node_modules\\router\\index.js:582:12)\n' +
+    '    at next (C:\\Projects\\image-uploader\\node_modules\\router\\index.js:291:5)\n' +
+    '    at Function.handle (C:\\Projects\\image-uploader\\node_modules\\router\\index.js:186:3)',
+  path: '/api/v1/auth/me',
+  method: 'GET',
+  level: 'error'
+}
+{
+  service: 'ImageUploadService',
+  timestamp: 2025-07-03T17:59:06.399Z,
+  message: 'Database error:  Error in PostgreSQL connection: Error { kind: Io, cause: Some(Os { code: 10054, kind: ConnectionReset, message: "An existing connection was forcibly closed by the remote host." }) }',
+  target: 'quaint::connector::postgres::native',
+  level: 'error'
+}
+{
+  message: 'Incoming request: GET /api/v1/auth/me',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  service: 'ImageUploadService',
+  name: 'Error',
+  message: 'Unhandled Error No token provided',
+  stack: 'Error: No token provided\n' +
+    '    at authenticateUser (C:\\Projects\\image-uploader\\middlewares\\authentication.js:12:21)\n' +
+    '    at Layer.handleRequest (C:\\Projects\\image-uploader\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at next (C:\\Projects\\image-uploader\\node_modules\\router\\lib\\route.js:157:13)\n' +
+    '    at Route.dispatch (C:\\Projects\\image-uploader\\node_modules\\router\\lib\\route.js:117:3)\n' +
+    '    at handle (C:\\Projects\\image-uploader\\node_modules\\router\\index.js:435:11)\n' +
+    '    at Layer.handleRequest (C:\\Projects\\image-uploader\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at C:\\Projects\\image-uploader\\node_modules\\router\\index.js:295:15\n' +
+    '    at processParams (C:\\Projects\\image-uploader\\node_modules\\router\\index.js:582:12)\n' +
+    '    at next (C:\\Projects\\image-uploader\\node_modules\\router\\index.js:291:5)\n' +
+    '    at Function.handle (C:\\Projects\\image-uploader\\node_modules\\router\\index.js:186:3)',
+  path: '/api/v1/auth/me',
+  method: 'GET',
+  level: 'error'
+}
+{
+  message: 'Incoming request: GET /api/v1/auth/me',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  service: 'ImageUploadService',
+  name: 'Error',
+  message: 'Unhandled Error No token provided',
+  stack: 'Error: No token provided\n' +
+    '    at authenticateUser (C:\\Projects\\image-uploader\\middlewares\\authentication.js:12:21)\n' +
+    '    at Layer.handleRequest (C:\\Projects\\image-uploader\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at next (C:\\Projects\\image-uploader\\node_modules\\router\\lib\\route.js:157:13)\n' +
+    '    at Route.dispatch (C:\\Projects\\image-uploader\\node_modules\\router\\lib\\route.js:117:3)\n' +
+    '    at handle (C:\\Projects\\image-uploader\\node_modules\\router\\index.js:435:11)\n' +
+    '    at Layer.handleRequest (C:\\Projects\\image-uploader\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at C:\\Projects\\image-uploader\\node_modules\\router\\index.js:295:15\n' +
+    '    at processParams (C:\\Projects\\image-uploader\\node_modules\\router\\index.js:582:12)\n' +
+    '    at next (C:\\Projects\\image-uploader\\node_modules\\router\\index.js:291:5)\n' +
+    '    at Function.handle (C:\\Projects\\image-uploader\\node_modules\\router\\index.js:186:3)',
+  path: '/api/v1/auth/me',
+  method: 'GET',
+  level: 'error'
+}
+{
+  message: 'Incoming request: GET /api/v1/auth/me',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  service: 'ImageUploadService',
+  name: 'Error',
+  message: 'Unhandled Error No token provided',
+  stack: 'Error: No token provided\n' +
+    '    at authenticateUser (C:\\Projects\\image-uploader\\middlewares\\authentication.js:12:21)\n' +
+    '    at Layer.handleRequest (C:\\Projects\\image-uploader\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at next (C:\\Projects\\image-uploader\\node_modules\\router\\lib\\route.js:157:13)\n' +
+    '    at Route.dispatch (C:\\Projects\\image-uploader\\node_modules\\router\\lib\\route.js:117:3)\n' +
+    '    at handle (C:\\Projects\\image-uploader\\node_modules\\router\\index.js:435:11)\n' +
+    '    at Layer.handleRequest (C:\\Projects\\image-uploader\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at C:\\Projects\\image-uploader\\node_modules\\router\\index.js:295:15\n' +
+    '    at processParams (C:\\Projects\\image-uploader\\node_modules\\router\\index.js:582:12)\n' +
+    '    at next (C:\\Projects\\image-uploader\\node_modules\\router\\index.js:291:5)\n' +
+    '    at Function.handle (C:\\Projects\\image-uploader\\node_modules\\router\\index.js:186:3)',
+  path: '/api/v1/auth/me',
+  method: 'GET',
+  level: 'error'
+}
+{
+  message: 'Incoming request: GET /api/v1/auth/me',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  service: 'ImageUploadService',
+  name: 'Error',
+  message: 'Unhandled Error No token provided',
+  stack: 'Error: No token provided\n' +
+    '    at authenticateUser (C:\\Projects\\image-uploader\\middlewares\\authentication.js:12:21)\n' +
+    '    at Layer.handleRequest (C:\\Projects\\image-uploader\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at next (C:\\Projects\\image-uploader\\node_modules\\router\\lib\\route.js:157:13)\n' +
+    '    at Route.dispatch (C:\\Projects\\image-uploader\\node_modules\\router\\lib\\route.js:117:3)\n' +
+    '    at handle (C:\\Projects\\image-uploader\\node_modules\\router\\index.js:435:11)\n' +
+    '    at Layer.handleRequest (C:\\Projects\\image-uploader\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at C:\\Projects\\image-uploader\\node_modules\\router\\index.js:295:15\n' +
+    '    at processParams (C:\\Projects\\image-uploader\\node_modules\\router\\index.js:582:12)\n' +
+    '    at next (C:\\Projects\\image-uploader\\node_modules\\router\\index.js:291:5)\n' +
+    '    at Function.handle (C:\\Projects\\image-uploader\\node_modules\\router\\index.js:186:3)',
+  path: '/api/v1/auth/me',
+  method: 'GET',
+  level: 'error'
+}
+{
+  message: 'Incoming request: GET /api/v1/auth/me',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  service: 'ImageUploadService',
+  name: 'Error',
+  message: 'Unhandled Error No token provided',
+  stack: 'Error: No token provided\n' +
+    '    at authenticateUser (C:\\Projects\\image-uploader\\middlewares\\authentication.js:12:21)\n' +
+    '    at Layer.handleRequest (C:\\Projects\\image-uploader\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at next (C:\\Projects\\image-uploader\\node_modules\\router\\lib\\route.js:157:13)\n' +
+    '    at Route.dispatch (C:\\Projects\\image-uploader\\node_modules\\router\\lib\\route.js:117:3)\n' +
+    '    at handle (C:\\Projects\\image-uploader\\node_modules\\router\\index.js:435:11)\n' +
+    '    at Layer.handleRequest (C:\\Projects\\image-uploader\\node_modules\\router\\lib\\layer.js:152:17)\n' +
+    '    at C:\\Projects\\image-uploader\\node_modules\\router\\index.js:295:15\n' +
+    '    at processParams (C:\\Projects\\image-uploader\\node_modules\\router\\index.js:582:12)\n' +
+    '    at next (C:\\Projects\\image-uploader\\node_modules\\router\\index.js:291:5)\n' +
+    '    at Function.handle (C:\\Projects\\image-uploader\\node_modules\\router\\index.js:186:3)',
+  path: '/api/v1/auth/me',
+  method: 'GET',
+  level: 'error'
+}
+{
+  message: 'Incoming request: GET /docs/',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Incoming request: GET /docs/swagger-ui.css',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Incoming request: GET /docs/swagger-ui-bundle.js',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Incoming request: GET /docs/swagger-ui-init.js',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Incoming request: GET /docs/swagger-ui-standalone-preset.js',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Incoming request: GET /api/v1/api/v1/images/stats',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Swagger docs available at /docs',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Testing DB connection...',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'S3 connection failed: UnknownError',
+  level: 'error',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Database connection established successfully',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Server running on ::: 3000',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Swagger docs: http://localhost:3000/docs',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  service: 'ImageUploadService',
+  timestamp: 2025-07-04T08:49:02.348Z,
+  message: 'Database error:  Error in PostgreSQL connection: Error { kind: Io, cause: Some(Os { code: 10054, kind: ConnectionReset, message: "An existing connection was forcibly closed by the remote host." }) }',
+  target: 'quaint::connector::postgres::native',
+  level: 'error'
+}
+{
+  message: 'Gracefully shutting down...',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Database disconnected successfully',
+  level: 'info',
+  service: 'ImageUploadService'
+}

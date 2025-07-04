@@ -23,7 +23,7 @@ registry.register('ErrorResponse', ErrorResponse)
 // Register API paths 
 registry.registerPath({
     method: 'post',
-    path: '/api/v1/images/upload',
+    path: '/api/v1/upload/images/upload',
     summary: 'Upload a single image',
     tag: ['Upload'],
     responses: {
@@ -40,7 +40,7 @@ registry.registerPath({
 
 registry.registerPath({
     method: 'post',
-    path: '/api/v1/images/upload/multiple',
+    path: '/api/v1/upload/images/upload/multiple',
     summary: 'Upload multiple images',
     tag: ['Upload'],
     responses: {
@@ -57,7 +57,7 @@ registry.registerPath({
 
 registry.registerPath({
     method: 'get',
-    path: '/api/v1/images/{id}',
+    path: '/api/v1/upload/images/{id}',
     summary: 'Get image by ID',
     tag: ['Images'],
     request: {
@@ -77,7 +77,7 @@ registry.registerPath({
 
 registry.registerPath({
     method: 'delete',
-    path: '/api/v1/images/{id}',
+    path: '/api/v1/upload/images/{id}',
     summary: 'Delete image by ID',
     tag: ['Images'],
     request: {
@@ -97,7 +97,7 @@ registry.registerPath({
 
 registry.registerPath({
     method: 'get',
-    path: '/api/v1/images',
+    path: '/api/v1/upload/images',
     summary: 'List all images for authenticated user',
     tag: ['Images'],
     responses: {
@@ -110,7 +110,7 @@ registry.registerPath({
 
 registry.registerPath({
     method: 'get',
-    path: '/api/v1/images/{id}/transformed',
+    path: '/api/v1/upload/images/{id}/transformed',
     summary: 'Get transformed version of an image',
     tag: ['Images'],
     request: {
@@ -143,7 +143,7 @@ registry.registerPath({
 
 registry.registerPath({
     method: 'get',
-    path: '/api/v1/images/stats',
+    path: '/api/v1/upload/images/stats',
     summary: 'Get image statistics',
     tags: ['Images'],
     responses: {
