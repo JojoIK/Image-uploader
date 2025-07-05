@@ -26,6 +26,28 @@ const UploadResponse = z.object({
     data: ImageMetadata
 }).openapi({ title: 'UploadResponse' })
 
+const RegisterRequest = z.object({
+    name: z.string()
+        .min(2, 'Name is too short')
+        .max(100, 'Name is too long')
+        .transform(val => val.trim())
+        .openapi({ description: 'Full name', example: 'Joan Ikwen' }),
+
+    email: z.string()
+        .email('Invalid email address')
+        .transform(val => val.toLowerCase().trim())
+        .openapi({ description: 'User email', example: 'joanikwen@gmail.com' }),
+
+    password: z.string()
+        .min(8, 'Password must be at least 8 characters')
+        .max(100)
+        .regex(
+            /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).*/,
+            'Password must contain at least one uppercase letter, one lowercase letter, and one digit'
+        )
+        .openapi({ description: 'Password', example: 'SecurePass123' })
+}).openapi({ title: 'RegisterRequest' })
+
 const ErrorResponse = z.object({
     success: z.literal(false),
     message: z.string(),
@@ -35,5 +57,6 @@ const ErrorResponse = z.object({
 module.exports = {
     ImageMetadata,
     UploadResponse,
+    RegisterRequest,
     ErrorResponse
 }

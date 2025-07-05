@@ -2468,3 +2468,248 @@
   level: 'info',
   service: 'ImageUploadService'
 }
+{
+  message: 'Swagger docs available at /docs',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Testing DB connection...',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Database connection established successfully',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Server running on ::: 3000',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Swagger docs: http://localhost:3000/docs',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'S3 connection failed: UnknownError',
+  level: 'error',
+  service: 'ImageUploadService'
+}
+{
+  service: 'ImageUploadService',
+  timestamp: 2025-07-05T08:23:04.451Z,
+  message: 'Database error:  Error in PostgreSQL connection: Error { kind: Closed, cause: None }',
+  target: 'quaint::connector::postgres::native',
+  level: 'error'
+}
+{
+  message: 'Swagger docs available at /docs',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Testing DB connection...',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  service: 'ImageUploadService',
+  message: 'Database error:  \n' +
+    'Invalid `prisma.$queryRaw()` invocation:\n' +
+    '\n' +
+    '\n' +
+    "Can't reach database server at `db.zyrvugjmftgzskdsszmx.supabase.co:5432`\n" +
+    '\n' +
+    'Please make sure your database server is running at `db.zyrvugjmftgzskdsszmx.supabase.co:5432`.',
+  target: '$queryRaw',
+  timestamp: 2025-07-05T14:24:15.538Z,
+  level: 'error'
+}
+{
+  service: 'ImageUploadService',
+  clientVersion: '6.10.1',
+  errorCode: undefined,
+  retryable: undefined,
+  name: 'PrismaClientInitializationError',
+  level: 'error',
+  message: 'Database connection atempt 1 failed:  \n' +
+    'Invalid `prisma.$queryRaw()` invocation:\n' +
+    '\n' +
+    '\n' +
+    "Can't reach database server at `db.zyrvugjmftgzskdsszmx.supabase.co:5432`\n" +
+    '\n' +
+    'Please make sure your database server is running at `db.zyrvugjmftgzskdsszmx.supabase.co:5432`.',
+  stack: 'PrismaClientInitializationError: \n' +
+    'Invalid `prisma.$queryRaw()` invocation:\n' +
+    '\n' +
+    '\n' +
+    "Can't reach database server at `db.zyrvugjmftgzskdsszmx.supabase.co:5432`\n" +
+    '\n' +
+    'Please make sure your database server is running at `db.zyrvugjmftgzskdsszmx.supabase.co:5432`.\n' +
+    '    at Zn.handleRequestError (C:\\Projects\\image-uploader\\node_modules\\@prisma\\client\\runtime\\library.js:121:7759)\n' +
+    '    at Zn.handleAndLogRequestError (C:\\Projects\\image-uploader\\node_modules\\@prisma\\client\\runtime\\library.js:121:6784)\n' +
+    '    at Zn.request (C:\\Projects\\image-uploader\\node_modules\\@prisma\\client\\runtime\\library.js:121:6491)\n' +
+    '    at async l (C:\\Projects\\image-uploader\\node_modules\\@prisma\\client\\runtime\\library.js:130:9778)\n' +
+    '    at async PrismaService.testConnection (C:\\Projects\\image-uploader\\config\\dbConfig.js:59:17)\n' +
+    '    at async C:\\Projects\\image-uploader\\server.js:18:25'
+}
+{
+  message: 'Gracefully shutting down...',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Swagger docs available at /docs',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Testing DB connection...',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  service: 'ImageUploadService',
+  message: 'Database error:  \n' +
+    'Invalid `prisma.$queryRaw()` invocation:\n' +
+    '\n' +
+    '\n' +
+    "Can't reach database server at `db.zyrvugjmftgzskdsszmx.supabase.co:5432`\n" +
+    '\n' +
+    'Please make sure your database server is running at `db.zyrvugjmftgzskdsszmx.supabase.co:5432`.',
+  target: '$queryRaw',
+  timestamp: 2025-07-05T14:40:11.301Z,
+  level: 'error'
+}
+{
+  service: 'ImageUploadService',
+  clientVersion: '6.10.1',
+  errorCode: undefined,
+  retryable: undefined,
+  name: 'PrismaClientInitializationError',
+  level: 'error',
+  message: 'Database connection atempt 1 failed:  \n' +
+    'Invalid `prisma.$queryRaw()` invocation:\n' +
+    '\n' +
+    '\n' +
+    "Can't reach database server at `db.zyrvugjmftgzskdsszmx.supabase.co:5432`\n" +
+    '\n' +
+    'Please make sure your database server is running at `db.zyrvugjmftgzskdsszmx.supabase.co:5432`.',
+  stack: 'PrismaClientInitializationError: \n' +
+    'Invalid `prisma.$queryRaw()` invocation:\n' +
+    '\n' +
+    '\n' +
+    "Can't reach database server at `db.zyrvugjmftgzskdsszmx.supabase.co:5432`\n" +
+    '\n' +
+    'Please make sure your database server is running at `db.zyrvugjmftgzskdsszmx.supabase.co:5432`.\n' +
+    '    at Zn.handleRequestError (C:\\Projects\\image-uploader\\node_modules\\@prisma\\client\\runtime\\library.js:121:7759)\n' +
+    '    at Zn.handleAndLogRequestError (C:\\Projects\\image-uploader\\node_modules\\@prisma\\client\\runtime\\library.js:121:6784)\n' +
+    '    at Zn.request (C:\\Projects\\image-uploader\\node_modules\\@prisma\\client\\runtime\\library.js:121:6491)\n' +
+    '    at async l (C:\\Projects\\image-uploader\\node_modules\\@prisma\\client\\runtime\\library.js:130:9778)\n' +
+    '    at async PrismaService.testConnection (C:\\Projects\\image-uploader\\config\\dbConfig.js:59:17)\n' +
+    '    at async C:\\Projects\\image-uploader\\server.js:18:25'
+}
+{
+  service: 'ImageUploadService',
+  message: 'Database error:  \n' +
+    'Invalid `prisma.$queryRaw()` invocation:\n' +
+    '\n' +
+    '\n' +
+    "Can't reach database server at `db.zyrvugjmftgzskdsszmx.supabase.co:5432`\n" +
+    '\n' +
+    'Please make sure your database server is running at `db.zyrvugjmftgzskdsszmx.supabase.co:5432`.',
+  target: '$queryRaw',
+  timestamp: 2025-07-05T14:40:17.342Z,
+  level: 'error'
+}
+{
+  service: 'ImageUploadService',
+  clientVersion: '6.10.1',
+  errorCode: undefined,
+  retryable: undefined,
+  name: 'PrismaClientInitializationError',
+  level: 'error',
+  message: 'Database connection atempt 2 failed:  \n' +
+    'Invalid `prisma.$queryRaw()` invocation:\n' +
+    '\n' +
+    '\n' +
+    "Can't reach database server at `db.zyrvugjmftgzskdsszmx.supabase.co:5432`\n" +
+    '\n' +
+    'Please make sure your database server is running at `db.zyrvugjmftgzskdsszmx.supabase.co:5432`.',
+  stack: 'PrismaClientInitializationError: \n' +
+    'Invalid `prisma.$queryRaw()` invocation:\n' +
+    '\n' +
+    '\n' +
+    "Can't reach database server at `db.zyrvugjmftgzskdsszmx.supabase.co:5432`\n" +
+    '\n' +
+    'Please make sure your database server is running at `db.zyrvugjmftgzskdsszmx.supabase.co:5432`.\n' +
+    '    at Zn.handleRequestError (C:\\Projects\\image-uploader\\node_modules\\@prisma\\client\\runtime\\library.js:121:7759)\n' +
+    '    at Zn.handleAndLogRequestError (C:\\Projects\\image-uploader\\node_modules\\@prisma\\client\\runtime\\library.js:121:6784)\n' +
+    '    at Zn.request (C:\\Projects\\image-uploader\\node_modules\\@prisma\\client\\runtime\\library.js:121:6491)\n' +
+    '    at async l (C:\\Projects\\image-uploader\\node_modules\\@prisma\\client\\runtime\\library.js:130:9778)\n' +
+    '    at async PrismaService.testConnection (C:\\Projects\\image-uploader\\config\\dbConfig.js:59:17)\n' +
+    '    at async C:\\Projects\\image-uploader\\server.js:18:25'
+}
+{
+  service: 'ImageUploadService',
+  message: 'Database error:  \n' +
+    'Invalid `prisma.$queryRaw()` invocation:\n' +
+    '\n' +
+    '\n' +
+    "Can't reach database server at `db.zyrvugjmftgzskdsszmx.supabase.co:5432`\n" +
+    '\n' +
+    'Please make sure your database server is running at `db.zyrvugjmftgzskdsszmx.supabase.co:5432`.',
+  target: '$queryRaw',
+  timestamp: 2025-07-05T14:40:23.375Z,
+  level: 'error'
+}
+{
+  message: 'Swagger docs available at /docs',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Testing DB connection...',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Database connection established successfully',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Server running on ::: 3000',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Swagger docs: http://localhost:3000/docs',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'S3 connection failed: UnknownError',
+  level: 'error',
+  service: 'ImageUploadService'
+}
+{
+  service: 'ImageUploadService',
+  timestamp: 2025-07-05T15:22:41.089Z,
+  message: 'Database error:  Error in PostgreSQL connection: Error { kind: Io, cause: Some(Os { code: 10054, kind: ConnectionReset, message: "An existing connection was forcibly closed by the remote host." }) }',
+  target: 'quaint::connector::postgres::native',
+  level: 'error'
+}
+{
+  message: 'Gracefully shutting down...',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Database disconnected successfully',
+  level: 'info',
+  service: 'ImageUploadService'
+}
