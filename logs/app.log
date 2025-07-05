@@ -2713,3 +2713,40 @@
   level: 'info',
   service: 'ImageUploadService'
 }
+{
+  message: 'Swagger docs available at /docs',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Testing DB connection...',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Database connection established successfully',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Server running on ::: 3000',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'Swagger docs: http://localhost:3000/docs',
+  level: 'info',
+  service: 'ImageUploadService'
+}
+{
+  message: 'S3 connection failed: UnknownError',
+  level: 'error',
+  service: 'ImageUploadService'
+}
+{
+  service: 'ImageUploadService',
+  timestamp: 2025-07-05T17:56:50.099Z,
+  message: 'Database error:  Error in PostgreSQL connection: Error { kind: Closed, cause: None }',
+  target: 'quaint::connector::postgres::native',
+  level: 'error'
+}

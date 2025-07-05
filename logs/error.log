@@ -1418,3 +1418,15 @@
   target: 'quaint::connector::postgres::native',
   level: 'error'
 }
+{
+  message: 'S3 connection failed: UnknownError',
+  level: 'error',
+  service: 'ImageUploadService'
+}
+{
+  service: 'ImageUploadService',
+  timestamp: 2025-07-05T17:56:50.099Z,
+  message: 'Database error:  Error in PostgreSQL connection: Error { kind: Closed, cause: None }',
+  target: 'quaint::connector::postgres::native',
+  level: 'error'
+}

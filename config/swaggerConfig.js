@@ -156,29 +156,29 @@ registry.registerPath({
     }
 })
 
-// // Auth routes
-// registry.registerPath({
-//     method: 'post',
-//     path: '/auth/register',
-//     summary: 'Register a new user',
-//     tags: ['Auth'],
-//     request: {
-//         body: {
-//             content: {
-//                 'application/json': {
-//                     schema: RegisterRequest
-//                 }
-//             }
-//         }
-//     },
-//     responses: {
-//         201: {
-//             description: 'User created successfuly',
-//             content: { 'application/json': { schema: z.object({success: z.boolean(), userId: z.string().uuid()}).openapi({}) } }
-//         },
-//         400: { description: 'Validation error', content: { 'application/json': { schema: ErrorResponse } } }
-//     }
-// })
+// Auth routes
+registry.registerPath({
+    method: 'post',
+    path: '/auth/register',
+    summary: 'Register a new user',
+    tags: ['Auth'],
+    request: {
+        body: {
+            content: {
+                'application/json': {
+                    schema: RegisterRequest
+                }
+            }
+        }
+    },
+    responses: {
+        201: {
+            description: 'User created successfuly',
+            content: { 'application/json': { schema: z.object({success: z.boolean(), userId: z.string().uuid()}).openapi({}) } }
+        },
+        400: { description: 'Validation error', content: { 'application/json': { schema: ErrorResponse } } }
+    }
+})
 
 registry.registerPath({
     method: 'post',
