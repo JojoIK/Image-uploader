@@ -233,7 +233,7 @@ const openApiDoc = generator.generateDocument({
         }
     },
     servers: [{
-        url: envConfig.NODE_ENV === 'production' ? 'https://your-production-domain.com/api/v1' : `http://localhost:${envConfig.PORT || 3000}/api/v1`,
+        url: envConfig.NODE_ENV === 'production' ? 'https://image-uploader-ewri.onrender.com/api/v1' : `http://localhost:${envConfig.PORT || 3000}/api/v1`,
         description: envConfig.NODE_ENV === 'production' ? 'Production' : 'Development'
     }],
     components: {
