@@ -1430,3 +1430,8 @@
   target: 'quaint::connector::postgres::native',
   level: 'error'
 }
+{
+  message: 'S3 connection failed: UnknownError',
+  level: 'error',
+  service: 'ImageUploadService'
+}
